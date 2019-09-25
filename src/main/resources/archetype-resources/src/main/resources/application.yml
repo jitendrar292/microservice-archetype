@@ -1,0 +1,68 @@
+info:
+  app:
+    name: CBRE VAS Subject Property Micro-service
+    description:
+    version: 1.0.0
+
+spring:
+  application:
+    name: CBRE VAS Subject Property Micro-service
+  profiles:
+    active: local
+  jpa:
+    properties:
+      hibernate.temp.use_jdbc_metadata_defaults: false
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+    hibernate:
+      ddl-auto: update
+
+server:
+  servlet:
+    context-path: /api/vas/platform
+    port: 8080
+
+# Set a custom Spring Actuator endpoint base path
+management:
+  endpoints:
+    web:
+      base-path: /sites/actuator
+      exposure:
+        include: info, health, loggers
+
+#spring.jpa.properties.hibernate.show_sql: true
+#spring.jpa.properties.hibernate.use_sql_comments: true
+#spring.jpa.properties.hibernate.format_sql: true
+
+---
+
+spring:
+  profiles: local
+  datasource:
+    url: jdbc:postgresql://localhost:5432/local
+    username: postgres
+    password: qwert@123
+    secret-name: dev/vas/microservice-database
+
+---
+
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:postgresql://tour-db-dev-instance.caooawecqvrq.us-east-1.rds.amazonaws.com:5432/tourdbdev
+    secret-name: dev/vas/tour-database
+
+---
+
+spring:
+  profiles: uat
+  datasource:
+    url: jdbc:postgresql://doc-metadata-instance.caooawecqvrq.us-east-1.rds.amazonaws.com:5432/docmetadatadb
+    secret-name: dev/vas/microservice-database
+
+---
+
+spring:
+  profiles: prod
+  datasource:
+    url: jdbc:postgresql://doc-metadata-prod-instance.cf83hkpldbrx.us-east-1.rds.amazonaws.com:5432/docmetadatadb
+    secret-name: prod/vas/microservice-database
