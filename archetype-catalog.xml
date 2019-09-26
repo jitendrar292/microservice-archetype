@@ -4,11 +4,11 @@
                    xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-catalog/1.0.0 http://maven.apache.org/xsd/archetype-catalog-1.0.0.xsd">
     <archetypes>
         <archetype>
-            <groupId>org.fintrace</groupId>
+            <groupId>com.cbre.vas.platform</groupId>
             <artifactId>microservice-archetype</artifactId>
-            <version>0.0.13</version>
-            <repository>https://github.com/fintrace/microservice-archetype</repository>
-            <description>Spring Boot 2 and Keycloak based Maven Archetype</description>
+            <version>1.0.0</version>
+            <repository>https://github.com/jitendrar292/microservice-archetype</repository>
+            <description>Spring Boot  based Maven Archetype</description>
         </archetype>
     </archetypes>
 </archetype-catalog>

@@ -13,10 +13,6 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>org.fintrace</groupId>
-            <artifactId>microservice-keycloak-support</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-sleuth</artifactId>
         </dependency>
@@ -97,10 +93,4 @@
             </plugin>
         </plugins>
     </build>
-    <scm>
-        <url>https://github.com/fintrace/${artifactId}</url>
-        <connection>scm:git:git://github.com/fintrace/${artifactId}.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/fintrace/${artifactId}.git</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
 </project>

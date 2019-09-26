@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.fintrace</groupId>
+    <groupId>com.cbre.vas.platform</groupId>
     <artifactId>microservice-archetype</artifactId>
-    <version>0.0.13</version>
+    <version>1.0.0</version>
     <packaging>maven-archetype</packaging>
     <name>pom</name>
     <description>Spring Boot 2 Maven Archetype</description>
-    <url>https://github.com/fintrace/microservice-archetype</url>
+    <url>https://github.com/jitendrar292/microservice-archetype</url>
     <profiles>
         <profile>
             <id>ossrh</id>
@@ -169,14 +169,14 @@
     </organization>
     <developers>
         <developer>
-            <name>Jitendra Rawat</name>
-            <email>jitendra.rawat@cbre.com</email>
+            <name>hgajsg</name>
+            <email>jgjagsdj@gmail.com</email>
         </developer>
     </developers>
     <scm>
-        <url>https://github.com/fintrace/microservice-archetype</url>
-        <connection>scm:git:git://github.com/fintrace/microservice-archetype.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/fintrace/microservice-archetype.git</developerConnection>
+        <url>https://github.com/jitendrar292/microservice-archetype</url>
+        <connection>scm:git:git://github.com/jitendrar292/microservice-archetype.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/jitendrar292/microservice-archetype.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
     <licenses>

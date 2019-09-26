@@ -22,7 +22,7 @@ import javax.sql.DataSource;
 import java.io.IOException;
 
 @Configuration
-public class ${artifactIdCamelCase}SpringConfig {
+public class ${artifactIdCamelCase}Config {
 
     @Autowired
     private AWSCredentialsProvider awsCredentialsProvider;
